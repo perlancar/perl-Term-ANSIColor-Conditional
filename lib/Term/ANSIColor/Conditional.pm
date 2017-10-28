@@ -1,5 +1,7 @@
 package Term::ANSIColor::Conditional;
 
+## no critic (Modules::ProhibitAutomaticExportation)
+
 # DATE
 # VERSION
 
