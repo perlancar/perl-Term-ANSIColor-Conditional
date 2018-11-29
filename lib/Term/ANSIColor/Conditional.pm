@@ -92,6 +92,15 @@ How to determine "color is enabled":
 =head2 $COLOR => bool
 
 
+=head1 ENVIRONMENT
+
+=head2 COLOR
+
+
 =head1 SEE ALSO
 
 L<Term::ANSIColor>
+
+These modules also respect the C<COLOR> environment variable:
+L<Color::ANSI::Util>, L<Term::ANSITable>, L<Data::Dump::Color>, L<JSON::Color>,
+L<YAML::Tiny::Color>, L<App::diffwc>, L<App::rsynccolor>.
