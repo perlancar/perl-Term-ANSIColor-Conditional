@@ -52,7 +52,7 @@ sub color {
 
 # provide our own colored()
 sub colored {
-    return $_[1] unless _color_enabled();
+    return do { ref $_[0] ? shift : pop; @_ } unless _color_enabled();
     goto &Term::ANSIColor::colored;
 }
 
