@@ -1,3 +1,10 @@
+0.002   2018-11-29 (PERLANCAR)
+
+        - [bugfix] Handle the case where colored() is called with ($text,
+          $color) instead of ([$color], $text). Also handle ([$color], $text,
+          $moretext, ...). (thanks Alexander Karelas).
+
+
 0.001   2017-10-28 (PERLANCAR)
 
         - First release.
