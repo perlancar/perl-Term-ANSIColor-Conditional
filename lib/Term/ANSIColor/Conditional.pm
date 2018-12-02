@@ -89,6 +89,11 @@ How to determine "color is enabled":
 
 =back
 
+Note that Term::ANSIColor already supports conditional color via the
+C<ANSI_COLORS_DISABLED> environment variable, but it does not supports the "more
+standard" C<NO_COLOR> and C<COLOR>, and it also does not check or interactive
+terminal.
+
 
 =head1 VARIABLES
 
