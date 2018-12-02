@@ -108,6 +108,6 @@ For more information, see L<https://no-color.org>.
 
 L<Term::ANSIColor>
 
-These modules also respect the C<COLOR> environment variable:
-L<Color::ANSI::Util>, L<Term::ANSITable>, L<Data::Dump::Color>, L<JSON::Color>,
-L<YAML::Tiny::Color>, L<App::diffwc>, L<App::rsynccolor>.
+These modules also respect the C<NO_COLOR> and/or the C<COLOR> environment
+variable: L<Color::ANSI::Util>, L<Text::ANSITable>, L<Data::Dump::Color>,
+L<JSON::Color>, L<YAML::Tiny::Color>, L<App::diffwc>, L<App::rsynccolor>.
