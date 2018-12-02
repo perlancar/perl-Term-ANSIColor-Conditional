@@ -40,6 +40,7 @@ BEGIN {
 
 sub _color_enabled {
     return $COLOR if defined $COLOR;
+    return 0 if exists $ENV{NO_COLOR};
     return $ENV{COLOR} if defined $ENV{COLOR};
     return (-t STDOUT);
 }
@@ -78,6 +79,8 @@ How to determine "color is enabled":
 
 =item * If package variable C<$Term::ANSIColor::Conditional::COLOR> is defined, use that.
 
+=item * Otherwise, check if C<NO_COLOR> environment variable exists. If yes, color is disabled.
+
 =item * Otherwise, check if C<COLOR> environment variable is defined and use that.
 
 =item * Otherwise, check if (-t STDOUT) is true (interactive terminal). If yes, color is enabled.
@@ -93,6 +96,10 @@ How to determine "color is enabled":
 
 
 =head1 ENVIRONMENT
+
+=head1 NO_COLOR
+
+For more information, see L<https://no-color.org>.
 
 =head2 COLOR
 
