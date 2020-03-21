@@ -2,7 +2,9 @@ package Term::ANSIColor::Conditional;
 
 ## no critic (Modules::ProhibitAutomaticExportation)
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use strict 'subs', 'vars';
@@ -12,6 +14,7 @@ use Exporter qw(import);
 use Term::ANSIColor (); # XXX color() & colored() still imported?
 no warnings 'redefine';
 
+if ($^O =~ /^(MSWin32)$/) { require Win32::Console::ANSI }
 
 our $COLOR;
 
