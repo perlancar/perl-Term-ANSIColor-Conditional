@@ -93,9 +93,8 @@ How to determine "color is enabled":
 =back
 
 Note that Term::ANSIColor already supports conditional color via the
-C<ANSI_COLORS_DISABLED> environment variable, but it does not support the "more
-standard" C<NO_COLOR> and C<COLOR> variables, and it also does not check for
-interactive terminal.
+C<ANSI_COLORS_DISABLED> and C<NO_COLOR> environment variables, but it does not
+check for interactive terminal or the C<COLOR> environment variable.
 
 
 =head1 VARIABLES
